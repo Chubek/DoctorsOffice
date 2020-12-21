@@ -1,0 +1,7 @@
+{
+    "tableName": "doctorsoffice",
+    "partitionKeyName": "patientId",
+    "partitionKeyType": "N",
+    "sortKeyName": "timesVisited",
+    "sortKeyType": "N"
+}

@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-doctorsoffice-dev-75640-authRole",
+      "UnauthRoleArn": "arn:aws:iam::623638530458:role/amplify-doctorsoffice-dev-75640-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::623638530458:role/amplify-doctorsoffice-dev-75640-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-doctorsoffice-dev-75640-deployment",
+      "UnauthRoleName": "amplify-doctorsoffice-dev-75640-unauthRole",
+      "StackName": "amplify-doctorsoffice-dev-75640",
+      "StackId": "arn:aws:cloudformation:eu-west-1:623638530458:stack/amplify-doctorsoffice-dev-75640/ca13bb60-4344-11eb-9795-0ad2f296a437",
+      "AmplifyAppId": "d17l2p17irdvon"
+    }
+  }
+}

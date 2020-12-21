@@ -1,0 +1,24 @@
+type Patient @model  {
+	patientId: ID!
+	name: String
+	diagnosis: Diagnosis @connection
+	timesVisited: Int
+	paid: Float	
+}
+
+type Diagnosis @model  {
+	diagnosisId: ID!
+	type: DiagnosisType
+	notes: String
+	date: AWSDate
+
+}
+
+enum DiagnosisType {
+	Differential
+	Pattern
+	Dual
+	Self
+	Remote
+	Computer
+}
