@@ -65,18 +65,54 @@ const App = () => {
 
   return (
     <div style={styles.container}>
-      <h2>Amplify Patientss</h2>
+      <h2>Insert Patients</h2>
+      <input
+        onChange={event => setInput('patientId', event.target.value)}
+        style={styles.input}
+        value={formState.patientId}
+        placeholder="Patient ID"
+      />
       <input
         onChange={event => setInput('name', event.target.value)}
         style={styles.input}
         value={formState.name}
-        placeholder="Name"
+        placeholder="Patient Name"
       />
       <input
-        onChange={event => setInput('description', event.target.value)}
+        onChange={event => setInput('diagnosis.id', event.target.value)}
         style={styles.input}
-        value={formState.description}
-        placeholder="Description"
+        value={formState.diagnosis.diagnosisId}
+        placeholder="Diagnosis ID"
+      />
+      <input
+        onChange={event => setInput('diagnosis.type', event.target.value)}
+        style={styles.input}
+        value={formState.diagnosis.type}
+        placeholder="Diagnosis Type"
+      />
+    <input
+        onChange={event => setInput('diagnosis.notes', event.target.value)}
+        style={styles.input}
+        value={formState.diagnosis.notes}
+        placeholder="Diagnosis Notes"
+      />
+    <input
+        onChange={event => setInput('diagnosis.date', event.target.value)}
+        style={styles.input}
+        value={formState.diagnosis.date}
+        placeholder="Diagnosis Date"
+      />
+    <input
+        onChange={event => setInput('timesVisited', event.target.value)}
+        style={styles.input}
+        value={formState.timesVisited}
+        placeholder="Times Visited"
+      />
+      <input
+        onChange={event => setInput('paid', event.target.value)}
+        style={styles.input}
+        value={formState.paid}
+        placeholder="Paid"
       />
       <button style={styles.button} onClick={addPatients}>Create Patients</button>
       {
